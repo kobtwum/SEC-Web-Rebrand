@@ -22,3 +22,13 @@ p{
   background: rgb(255,255,255);
 background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(17,138,225,1) 100%);
 }
+
+.header{
+  background:url(../img/homebg.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.color-overlay{
+  background: rgba(0, 0, 0, 0.55);
+}
