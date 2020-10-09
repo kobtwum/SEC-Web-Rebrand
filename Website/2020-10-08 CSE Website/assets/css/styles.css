@@ -1,0 +1,24 @@
+h1{
+  font-size: 30px;
+  font-weight: 800;
+  color:#202846
+}
+
+h4{
+  font-size:20px;
+  font-weight:600;
+}
+
+p{
+  font-size:14px;
+  font-weight:400;
+  color:#505152;
+}
+
+.underline{
+  background-image:linear-gradient(to right, #fff, #118ae1, #fff)
+}
+.product-underline{
+  background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(17,138,225,1) 100%);
+}
