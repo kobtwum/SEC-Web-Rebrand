@@ -1,0 +1,14 @@
+Informations
+Add "data-filter" attribute to filter control element
+
+Output example: <span data-filter="4">Category name</span>
+
+Add "data-category" attribute to .filtr-item element with the number of the filter
+
+Output example: <div class="filtr-item" data-category="4">...</div>
+
+Card in multiple categories: <div class="filtr-item" data-category="4,5">...</div> (separate with comma)
+
+Documentation
+FILTERIZR WEBSITE
+
