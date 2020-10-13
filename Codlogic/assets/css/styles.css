@@ -1,0 +1,91 @@
+h1{
+  font-size: 30px;
+  font-weight: 800;
+  color:#202846
+}
+
+h4{
+  font-size:20px;
+  font-weight:600;
+}
+
+p{
+  font-size:14px;
+  font-weight:400;
+  color:#505152;
+}
+
+.underline{
+  background-image:linear-gradient(to right, #fff, #118ae1, #fff)
+}
+.product-underline{
+  background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(17,138,225,1) 100%);
+}
+
+.header{
+  background:url(../img/gallery/background.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.color-overlay{
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* padding-top: 56.25%; 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Team Tile  */
+
+.image-block {
+    border: 1px solid white ;
+    background-color: black;
+    padding: 0px;    
+    margin: 0px;
+    height:200px;
+    /* width: 100px; */
+    text-align: center;
+    /* vertical-align: bottom; */
+}
+.image-block > p {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3,3,3,0.0);
+    color: rgba(6,6,6,0.0);
+}
+/* .image-block:hover > p {
+    background-color: #03030380;    
+    color: white;    
+} */
+
+@media screen and (max-width: 600px){
+  .image-block {
+    border: 2px solid white ;
+    background-color: black;
+    padding: 0px;    
+    margin: 0px;
+    max-height:120px;
+    width: 120px;
+    text-align: center;
+    /* vertical-align: bottom; */
+  }
+}
