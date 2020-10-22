@@ -65,6 +65,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.serve{
+  border-radius:12px;
+  background:#f6f9fe;
+  border:none;
+}
+
+.service .serve:hover i h5{
+  color:#009f
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -699,6 +709,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  min-width: 300px;
 }
 
 .featured-services .icon-box::before {
@@ -726,7 +737,7 @@ section {
 .featured-services .icon i {
   font-size: 48px;
   line-height: 1;
-  color: #106eea;
+  color: #009fe3;
   transition: all 0.3s ease-in-out;
 }
 
@@ -737,7 +748,7 @@ section {
 }
 
 .featured-services .title a {
-  color: #111;
+  color: #234a5c;
 }
 
 .featured-services .description {
