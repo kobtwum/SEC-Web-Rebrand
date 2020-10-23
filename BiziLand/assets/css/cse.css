@@ -1,0 +1,17 @@
+/* GLOBAL STYLES */
+
+
+   .item {
+   border: none;
+   font-size: 2em;
+   font-family: sans-serif;
+   font-weight: bold;
+   background-color: #000;
+   }
+
+.contain {
+   display: grid;
+   grid-gap: 0.35rem;
+   grid-template-columns:  repeat(6, 60px);
+   grid-template-rows: repeat(6, 60px);
+   }
