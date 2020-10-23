@@ -1,0 +1,25 @@
+/* GLOBAL STYLES */
+  
+   * {
+       box-sizing: border-box;
+       }
+      
+   body {
+   background-color: #FFF;
+   margin: 50px;
+   }
+  
+   .item {
+   border: none;
+   font-size: 2em;
+   font-family: sans-serif;
+   font-weight: bold;
+   background-color: #000;
+   }
+
+.container {
+   display: grid;
+   grid-gap: 0.35rem;
+   grid-template-columns:  repeat(6, 49px);
+   grid-template-rows: repeat(6, 49px);
+   }
