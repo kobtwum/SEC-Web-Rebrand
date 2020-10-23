@@ -1016,8 +1016,8 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  padding: 50px 0;
+  background: url("../img/testimonial-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1691,17 +1691,21 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+#footer-top{
+ background-color:  #f6f9fe;
+}
+
 #footer {
-  background: #fff;
+  /* background: #fff; */
   padding: 0 0 30px 0;
   color: #444444;
   font-size: 14px;
-  background: #f1f6fe;
+  /* background: #f1f6fe; */
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #f1f6fe;
+  /* background: #f1f6fe; */
   text-align: center;
   font-size: 15px;
 }
@@ -1752,7 +1756,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  /* background: #fff; */
 }
 
 #footer .footer-top .footer-contact {
