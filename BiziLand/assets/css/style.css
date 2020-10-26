@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: "Love_Trust";
+  src: url('/assets/webfonts/Love\ &\ Trust.ttf');
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -15,21 +21,21 @@ a:hover {
   text-decoration: none;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Work sans", sans-serif;
 }
 
-.welcome{
-  transition: all 2s linear;
-  display: block;
+#welcome{
+  opacity: 1;
+  transition: all 1s;
 }
 
-.hidden{
-  display: none;
+#profile{
+  display:none;
 }
-.visuallyhidden {
-  opacity: 0;
-}
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -611,7 +617,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 90px 0;
   overflow: hidden;
 }
 

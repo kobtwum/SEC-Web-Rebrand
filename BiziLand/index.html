@@ -77,11 +77,23 @@
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-lg-7 col-md-6">
               <div id="welcome">
-                <h1 style="font-size:35px;font-weight:500">Welcome to</h1>
-                <h1 class="pt-3"style="color:#009FE3">CodLogic<br>Software Engineering</h1>
-                <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <div class="d-flex pt-3">
+                <h1 style="font-size:70px;font-weight:500;font-family:Love_Trust;">Technology For Good.</h1>
+                <!-- <h1 class="pt-3"style="color:#009FE3">CodLogic<br>Software Engineering</h1>
+                <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <!-- <div class="d-flex pt-3">
                   <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                </div> -->
+              </div>
+              <div id="profile">
+                <div class="row">
+                  <div class="col-6">
+                    <img src="assets/img/brandicons/profile.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-6">
+                    <h1>
+                      Profile Analysis
+                    </h1>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1300,43 +1312,45 @@
     })
   </script>
 
-  <!-- <script>
-    let welcome = document.getElementById('welcome'),
-    btn = document.getElementById('profile');
-
-btn.addEventListener('click', function () {
-  
-  if (welcome.classList.contains('hidden')) {
-    welcome.classList.remove('hidden');
-    setTimeout(function () {
-      welcome.classList.remove('visuallyhidden');
-    }, 20);
-  } else {
-    welcome.classList.add('visuallyhidden');    
-    welcome.addEventListener('transitionend', function(e) {
-      welcome.classList.add('hidden');
-    }, {
-      capture: false,
-      once: true,
-      passive: false
-    });
-  }
-  
-}, false);
-  </script> -->
-
-  <script>
-    function profile(){
+<script>
+   function profile()
+    {
         var x = document.getElementById("welcome");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+        var y = document.getElementById("profile")
+
+      if (x.style.display === "none")
+      {
+        setTimeout(function()
+        {
+          x.style.display = "block";
+        }, 300);
+      } 
+      else 
+      {
+        setTimeout(function()
+        {
+          x.style.display = "none";
+        },200);
       }
 
-  
-  </script>
+
+
+      if (y.style.display === "block")
+      {
+        setTimeout(function()
+        {
+          y.style.display = "none";
+        }, 300);
+      } 
+      else 
+      {
+        setTimeout(function()
+        {
+          y.style.display = "block";
+        },200);
+      } 
+    }
+</script>
 
 </body>
 
