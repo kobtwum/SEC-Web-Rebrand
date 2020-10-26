@@ -1,3 +1,9 @@
+
+@font-face {
+   font-family: "Love_Trust";
+   src: url('assets/webfonts/Love_Trust.ttf');
+ }
+
 /* GLOBAL STYLES */
 
 
@@ -24,12 +30,14 @@
    transition: all .4s ease-in-out;
  }
  .anim:hover{
-    transform:scale(1.1);
+    transform:scale(1.2);
     transition: all .4s ease-in-out;
     -webkit-box-shadow: 5px 3px 13px 1px rgba(0,0,0,0.34); 
    box-shadow: 5px 3px 13px 1px rgba(0,0,0,0.34);
 
  }
+
+
  
  
  
