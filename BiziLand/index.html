@@ -87,12 +87,16 @@
               <div id="profile">
                 <div class="row">
                   <div class="col-6">
-                    <img src="assets/img/brandicons/profile.png" class="img-fluid" alt="">
+                    <img src="assets/img/DescriptionImage/software.png" class="img-fluid" alt="">
+                    <!-- <img src="assets/img/DescriptionImage/profile.png" class="img-fluid" alt=""> -->
                   </div>
-                  <div class="col-6">
-                    <h1>
-                      Profile Analysis
+                  <div class="col-6" style="padding-top:5%;">
+                    <h1 style="font-size:40px">
+                      Secured Guest Data
                     </h1>
+                    <p style="margin-top:16px">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -107,7 +111,7 @@
                   <div class="item item5"><img src="assets/img/brandicons/rect.png" alt="Blank Icon" width="60" height="60"></div>
                   <div class="item item6"><img src="assets/img/brandicons/rect.png" alt="Blank Icon" width="60" height="60"></div>
                   <div class="item item7"><img src="assets/img/brandicons/rect.png" alt="Blank Icon" width="60" height="60"></div>
-                  <div class="item item8 anim" onclick="profile()"><img src="assets/img/brandicons/profile.png" alt="Blank Icon" width="60" height="60"></div></a>
+                  <div class="item item8 anim" onclick="profile()"><img src="assets/img/brandicons/profil.png" alt="Blank Icon" width="60" height="60"></div></a>
                   <div class="item item9 anim"><img src="assets/img/brandicons/software.png" alt="Blank Icon" width="60" height="60"></div>
                   <div class="item item10 anim"><img src="assets/img/brandicons/key.png" alt="Blank Icon" width="60" height="60"></div>
                   <div class="item item11 anim"><img src="assets/img/brandicons/shield.png" alt="Blank Icon" width="60" height="60"></div>
@@ -1302,6 +1306,9 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Brand Icons Js File -->
+  <script src="assets/js/icons.js"></script>
+
   <!-- script used in the webpage -->
   <script>
     window.addEventListener('scroll', function(){
@@ -1311,46 +1318,6 @@
       header.classList.toggle('scrolling-active', windowPosition);
     })
   </script>
-
-<script>
-   function profile()
-    {
-        var x = document.getElementById("welcome");
-        var y = document.getElementById("profile")
-
-      if (x.style.display === "none")
-      {
-        setTimeout(function()
-        {
-          x.style.display = "block";
-        }, 300);
-      } 
-      else 
-      {
-        setTimeout(function()
-        {
-          x.style.display = "none";
-        },200);
-      }
-
-
-
-      if (y.style.display === "block")
-      {
-        setTimeout(function()
-        {
-          y.style.display = "none";
-        }, 300);
-      } 
-      else 
-      {
-        setTimeout(function()
-        {
-          y.style.display = "block";
-        },200);
-      } 
-    }
-</script>
 
 </body>
 
