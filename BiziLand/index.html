@@ -58,11 +58,11 @@
           </li>
           <!-- <li class="active"><a href="#hero">Home</a></li> -->
           <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#">Insight</a></li>
           <!-- <li><a href="#services">Services</a></li> -->
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <!-- <li><a href="#team">Team</a></li> -->
-          <li><a href="#contact">Contact</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -76,8 +76,14 @@
         <div class="container">
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-lg-7 col-md-6">
+              <div>
+                
+              </div>
               <div id="welcome">
                 <h1 style="font-size:70px;font-weight:500;font-family:Love_Trust;">Technology For Good.</h1>
+                <div class="">
+                  <img  class="img-fluid" src="assets/img/arrow.png" alt="" width="60%">
+                </div>
                 <!-- <h1 class="pt-3"style="color:#009FE3">CodLogic<br>Software Engineering</h1>
                 <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
                 <!-- <div class="d-flex pt-3">
@@ -1316,18 +1322,28 @@
    function profile()
     {
         var x = document.getElementById("welcome");
-        var y = document.getElementById("profile")
+        var y = document.getElementById("profile");
+        var opacity = 0;
 
       if (x.style.display === "none")
       {
+        setInterval(function() { 
+  
+      if (opacity < 1) { 
+        opacity = opacity + 0.3;
+        x.style.opacity = opacity; 
+      } else { 
+        clearInterval(); 
+      } 
+      }, 150); 
         setTimeout(function()
-        {
+        { 
           x.style.display = "block";
         }, 300);
       } 
       else 
-      {
-        setTimeout(function()
+      { 
+               setTimeout(function()
         {
           x.style.display = "none";
         },200);
@@ -1344,10 +1360,19 @@
       } 
       else 
       {
-        setTimeout(function()
-        {
-          y.style.display = "block";
-        },200);
+        setInterval(function() { 
+  
+  if (opacity < 1) { 
+    opacity = opacity + 0.3;
+    y.style.opacity = opacity; 
+  } else { 
+    clearInterval(); 
+  } 
+  }, 150); 
+    setTimeout(function()
+    { 
+      y.style.display = "block";
+    }, 300);
       } 
     }
 </script>
