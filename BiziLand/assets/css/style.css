@@ -507,12 +507,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .container {
   position: relative;
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
 }
 
 @media (max-width: 992px) {
   #hero .container {
-    padding-top: 58px;
+    padding: 58px 0 58px 0;
   }
 }
 
@@ -592,7 +592,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     /* height: 100vh; */
   }
-  
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -1913,22 +1913,22 @@ section {
     0% {opacity:0;}
     100% {opacity:1;}
   }
-  
+
   @-moz-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
-  
+
   @-webkit-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
-  
+
   @-o-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
   }
-  
+
   @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
