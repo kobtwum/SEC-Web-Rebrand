@@ -71,21 +71,21 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-      <div class="col-lg-12" style="margin-bottom:5%">
+  <section id="hero" class="d-flex align-items-center" style="background-image: url(assets/img/bg.jpg) ;">
+      <div class="col-lg-12">
         <div class="container d-none d-lg-block">
           <div class="row d-flex align-items-center justify-content-center">
             <div class="col-lg-7 col-md-6  d-flex align-items-center justify-content-center">
 
               <div class="row" id="welcome">
-                <div class="col-10 d-flex align-items-center justify-content-center mt-5">
-                    <h1 style="font-size:55px;font-weight:500;font-family:Love_Trust; color: #7c7c7c;">Technology for good.</h1>
+                <div class="col-10 d-flex align-items-center justify-content-center mt-5 text-center">
+                    <h1 style="font-size:65px;font-weight:500;font-family:Love_Trust; color: #7c7c7c;">Technology for good.</h1>
                 </div>
-                <div class="col-2 d-flex align-items-center justify-content-center mt-5">
-                  <div><img class="img-fluid" src="assets/img/newArrow.png" alt=""></div>
+                <div class="col-1 d-flex align-items-center justify-content-center p-0 offset-1" style="margin-top: 260px;">
+                  <div><img class="img-fluid" src="assets/img/newArrow.png" alt="arrow pointing to icons" width="100%"></div>
                 </div>
-                <div class="col-12">
-                  <p style="text-align: right; color: #7c7c7c; overflow-wrap: break-word;">Click on an icon to<br> learn more</p>
+                <div class="col-12 p-0">
+                  <p style="text-align: right; color: #7c7c7c; overflow-wrap: break-word; font-size: 13px;">Click on an icon to<br> learn more</p>
                 </div>
 
               </div>
@@ -1370,219 +1370,200 @@
     }
 </script> -->
 
-<script>
+  <script>
 
-  function profile(e){
+    function profile(e){
 
-     //Getting the current element
-    var currentNode = document.querySelector('#welcome');
+      //Getting the current element
+      var currentNode = document.querySelector('#welcome');
 
-    // var identity = document.getElementsByClassName("anim"[0]).id;
-    console.log(e);
-        // e = e || window.event;
-        // e = e.target;
+      // var identity = document.getElementsByClassName("anim"[0]).id;
+      console.log(e);
+          // e = e || window.event;
+          // e = e.target;
 
-    // console.log("ID " + e);
+      // console.log("ID " + e);
 
-    // console.log(identity);
+      // console.log(identity);
 
-    switch(e){
-      case "user":
+      switch(e){
+        case "user":
 
-          // Add ID and content
+            // Add ID and content
+          // newNode.id = 'salutation';
+          currentNode.innerHTML =
+            '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/profile.png" class="img-fluid" alt=""></div>' +
+            '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p data-aos="fade-right" data-aos-delay="100"  style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+
+        break;
+
+        case "timed":
+
+            // Add ID and content
+          // newNode.id = 'salutation';
+          currentNode.innerHTML =
+            '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/timed.png" class="img-fluid" alt=""></div>' +
+            '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+
+        break;
+
+        case "key":
+
+        // Add ID and content
         // newNode.id = 'salutation';
         currentNode.innerHTML =
-          '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/profile.png" class="img-fluid" alt=""></div>' +
-          '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p data-aos="fade-right" data-aos-delay="100"  style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/accesscontrol.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "timed":
+        case "configurable":
 
-          // Add ID and content
+        // Add ID and content
         // newNode.id = 'salutation';
         currentNode.innerHTML =
-          '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/timed.png" class="img-fluid" alt=""></div>' +
-          '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/support.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "key":
+        case "cctv":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/accesscontrol.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/cctv.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "configurable":
+        case "accuracy":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/support.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/accuracy.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "cctv":
+        case "police":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/cctv.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/police.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "accuracy":
+        case "rfid":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/accuracy.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/rfid.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "police":
+        case "environmental":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/police.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/ecofriendly.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "rfid":
+        case "faceScan":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/rfid.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/facerec.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "environmental":
+        case "analysis":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/ecofriendly.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/analytics.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "faceScan":
+        case "network":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/facerec.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/connectivity.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "analysis":
+        case "database":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/analytics.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/database.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "network":
+        case "log":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/connectivity.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/activitylogging.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "database":
+        case "message":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/database.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/message.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
+        break;
 
-      case "log":
+        case "shield":
 
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/activitylogging.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
+        // Add ID and content
+        // newNode.id = 'salutation';
+        currentNode.innerHTML =
+        '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/eventlog.png" class="img-fluid" alt=""></div>' +
+        '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
 
-      break;
-
-      case "message":
-
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/message.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
-
-      break;
-
-      case "shield":
-
-      // Add ID and content
-      // newNode.id = 'salutation';
-      currentNode.innerHTML =
-      '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/brand_icons/gradients/eventlog.png" class="img-fluid" alt=""></div>' +
-      '<div class="col-6" style="padding-top:5%;"><h1 data-aos="fade-left" data-aos-delay="100" style="font-size:40px">Secured Guest Data</h1><p p data-aos="fade-right" data-aos-delay="100" style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
-
-      break;
+        break;
 
 
-      case "default":
+        case "default":
 
-      currentNode.innerHTML =
-        '<div class="fadeIn col-10 d-flex align-items-center justify-content-center mt-5">' +
-            '<h1 style="font-size:55px;font-weight:500;font-family:Love_Trust; color: #7c7c7c;">Technology for good.</h1>' +
-        '</div>' +
-        '<div class="fadeIn col-2 d-flex align-items-center justify-content-center mt-5">' +
-          '<div><img class="img-fluid" src="assets/img/newArrow.png" alt=""></div>' +
-        '</div>' +
-        ' <div class="fadeIn col-12">' +
-          '<p style="text-align: right; color: #7c7c7c; overflow-wrap: break-word;">Click on an icon to<br> learn more</p>' +
-        '</div>';
-    }
+        currentNode.innerHTML =
+          '<div class="fadeIn col-10 d-flex align-items-center justify-content-center mt-5 text-center">' +
+              '<h1 style="font-size:65px;font-weight:500;font-family:Love_Trust; color: #7c7c7c;">Technology for good.</h1>' +
+          '</div>' +
+          '<div class="fadeIn col-1 d-flex align-items-center justify-content-center p-0 offset-1" style="margin-top: 260px;">' +
+            '<div><img class="img-fluid" src="assets/img/newArrow.png" alt="arrow pointing to icons" width="100%"></div>' +
+          '</div>' +
+          ' <div class="fadeIn col-12 p-0">' +
+            '<p style="text-align: right; color: #7c7c7c; overflow-wrap: break-word;">Click on an icon to<br> learn more</p>' +
+          '</div>';
+      }
+    } 
 
-
-
-
-// Add ID and content
-// newNode.id = 'salutation';
-// currentNode.innerHTML =
-//   '<div class="row fadeIn"> <div class="col-6"> <img src="assets/img/DescriptionImage/profile.png" class="img-fluid" alt=""></div>' +
-//   '<div class="col-6" style="padding-top:5%;"><h1 style="font-size:40px">Secured Guest Data</h1><p style="margin-top:16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div>';
-
-  // Replace the current node with the new node
-
-  // currentNode.replaceWith(newNode);
-
-
-  }
-
-    // Create a new element
-    // var newNode = document.createElement('div');
-
-
-</script>
+  </script>
 
 </body>
 

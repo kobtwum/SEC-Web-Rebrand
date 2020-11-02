@@ -1933,3 +1933,7 @@ section {
     0% {opacity:0;}
     100% {opacity:1;}
   }
+
+  div .contain #default{
+    cursor: pointer;
+  }
